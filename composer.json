@@ -23,9 +23,32 @@
       "In2code\\Instagram\\": "Classes/"
     }
   },
+  "config": {
+    "vendor-dir": ".build/vendor",
+    "bin-dir": ".build/bin",
+    "sort-packages": true,
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true,
+      "phpstan/extension-installer": true
+    }
+  },
   "extra": {
     "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".build/public",
       "extension-key": "instagram"
     }
+  },
+  "require-dev": {
+    "typo3/cms-backend": "^12.4",
+    "typo3/cms-extbase": "^12.4",
+    "typo3/cms-extensionmanager": "^12.4",
+    "typo3/cms-filelist": "^12.4",
+    "typo3/cms-fluid": "^12.4",
+    "typo3/cms-fluid-styled-content": "^12.4",
+    "typo3/cms-frontend": "^12.4",
+    "typo3/cms-install": "^12.4",
+    "typo3/minimal": "^12"
   }
 }
