@@ -36,7 +36,7 @@ class GetToken extends AbstractFormElement
     /**
      * @return array
      */
-    public function render()
+    public function render(): array
     {
         $this->tokenRepository = GeneralUtility::makeInstance(TokenRepository::class);
         $this->createEmptyTokenRecord();
