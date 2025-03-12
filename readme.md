@@ -36,15 +36,12 @@ below.
 > * The Instagram API is only available for Instagram Business accounts. If you have a private account, you have to switch to a business account first.
 > * The Instagram account you want to access needs to be part of a developer Facebook account as well, otherwise it can't be added as tester to an application.
 
-First of all, you should follow the official guidelines with step 1, 2 and 3 - see details at
-https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/
-
 1. You need a individual Facebook account
 2. Once you have a Facebook account, register as a developer at https://developers.facebook.com/
 3. Add a new application.
-4. Configure the integration "Instagram API with Instagram Login"
-   * Note: Simply use the homepage URL of your website for the "OAuth Redirect URIs" like `https://www.in2code.de/` (same for "Deauthorize Callback URL" and "Data Deletion Request Callback URL")
-   * Note 2: Make some notes for your new "App ID", "App secret" and the "Redirect URI" - this will be needed later in the FlexForm
+4. Configure the integration ["Instagram API with Instagram Login"](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/)
+   * Configure "Instagram Business Login". As a OAuth Redirect URL just use the URL of your homepage (e.g. https://www.in2code.de)
+   * Make some notes for your new "App ID", "App secret" and the "Redirect URI" - this will be needed later in the FlexForm
 5. Under "Roles" add your Instagram account as a test account. _(see notes above)_
    * You need to accept this on your Instagram account. Go to your Instagram account settings and then to "Apps and Websites" and add the new app as a tester.
 6. Install the extension (if not yet done)
