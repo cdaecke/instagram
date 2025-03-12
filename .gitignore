@@ -16,6 +16,7 @@ dynamicReturnTypeMeta.json
 Resources/Private/Build/node_modules/
 node_modules/
 .build/
+config/
 var/
 composer.lock
 package-lock.json
