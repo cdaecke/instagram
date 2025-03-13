@@ -30,7 +30,7 @@ class IsLocalImageExistingViewHelper extends AbstractConditionViewHelper
      * @return bool
      * @throws \Exception
      */
-    protected static function evaluateCondition($arguments = null): bool
+    protected static function evaluateCondition(?array $arguments = null): bool
     {
         $file = GeneralUtility::getFileAbsFileName(self::$imageFolder) . $arguments['id'] . '.jpg';
         return is_file($file);

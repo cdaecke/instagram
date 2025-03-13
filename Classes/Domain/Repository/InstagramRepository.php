@@ -30,7 +30,7 @@ class InstagramRepository
      * @param RequestFactory|null $requestFactory
      * @param TokenRepository|null $tokenRepository
      */
-    public function __construct(RequestFactory $requestFactory = null, TokenRepository $tokenRepository = null)
+    public function __construct(?RequestFactory $requestFactory = null, ?TokenRepository $tokenRepository = null)
     {
         $this->requestFactory = $requestFactory ?: GeneralUtility::makeInstance(RequestFactory::class);
         $this->tokenRepository = $tokenRepository ?: GeneralUtility::makeInstance(TokenRepository::class);
