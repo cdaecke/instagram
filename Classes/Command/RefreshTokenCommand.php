@@ -32,7 +32,7 @@ class RefreshTokenCommand extends Command
      * ImportFeedCommand constructor.
      * @param string|null $name
      */
-    public function __construct(string $name = null)
+    public function __construct(?string $name = null)
     {
         parent::__construct($name);
         $this->instagramRepository = GeneralUtility::makeInstance(InstagramRepository::class);

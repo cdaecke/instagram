@@ -35,7 +35,7 @@ class ImportFeedCommand extends Command
      * ImportFeedCommand constructor.
      * @param string|null $name
      */
-    public function __construct(string $name = null)
+    public function __construct(?string $name = null)
     {
         parent::__construct($name);
         $this->prepareFeed = GeneralUtility::makeInstance(PrepareFeed::class);
