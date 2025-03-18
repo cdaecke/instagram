@@ -15,5 +15,8 @@ ddev composer install
 echo "Restarting DDEV to apply configuration"
 ddev restart
 
-echo "Executing TYPO3 Setup"
-ddev exec ./.build/bin/typo3 setup
+echo "Run database migrations"
+ddev exec ./.build/bin/typo3 database:updateschema
+
+echo "Adding backend user 'admin' with password 'John3:16'"
+ddev exec ./.build/bin/typo3 backend:user:create -u admin -p John3:16

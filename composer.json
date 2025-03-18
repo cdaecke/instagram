@@ -41,6 +41,7 @@
     }
   },
   "require-dev": {
+    "helhum/typo3-console": "^8.2",
     "typo3/cms-backend": "^13.4",
     "typo3/cms-extbase": "^13.4",
     "typo3/cms-extensionmanager": "^13.4",
