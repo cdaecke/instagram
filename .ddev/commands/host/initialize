@@ -9,11 +9,11 @@ ln -snf ../../../.ddev/TYPO3/config.yaml config/sites/main/config.yaml
 mkdir -p config/system
 ln -snf ../../.ddev/TYPO3/settings.php config/system/settings.php
 
-echo "Importing database"
-ddev import-db --file=.ddev/data/db.sql.gz
-
 echo "Run 'composer install'"
 ddev composer install
 
-echo "Copy .htaccess"
-cp .build/vendor/typo3/cms-install/Resources/Private/FolderStructureTemplateFiles/root-htaccess .build/public/.htaccess
+echo "Restarting DDEV to apply configuration"
+ddev restart
+
+echo "Executing TYPO3 Setup"
+ddev exec ./.build/bin/typo3 setup
