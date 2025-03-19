@@ -256,6 +256,7 @@ In this case you have to remove all tokens (see CLI section above) and create ne
 
 | Version   | Date       | State   | Description                                                                                                                                                                                                                                   |
 |-----------|------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 13.0.0    | 2025-03-19 | Task    | Support TYPO3 12 and 13 now  
 | 8.0.0     | 2023-10-24 | Task    | Support TYPO3 11 and 12 now                                                                                                                                                                                                                   |
 | 7.2.0     | 2023-02-16 | Task    | Add PHP 8 support                                                                                                                                                                                                                             |
 | 7.1.0     | 2022-09-22 | Feature | Add optional static file include for styling of default layout                                                                                                                                                                                |
