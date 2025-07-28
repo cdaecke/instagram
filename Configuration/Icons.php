@@ -1,8 +1,10 @@
 <?php
 
+use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
+
 return [
     'extension-instagram' => [
-        'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+        'provider' => SvgIconProvider::class,
         'source' => 'EXT:instagram/Resources/Public/Icons/Extension.svg',
     ]
 ];
