@@ -252,6 +252,36 @@ A: If you change the instagram password, all tokens are not valid any more. An e
 In this case you have to remove all tokens (see CLI section above) and create new ones from the scratch.
 
 
+## Contribution with ddev
+
+This repository provides a [DDEV]()-backed development environment. If DDEV is installed, simply run the following
+commands to quickly set up a local environment with example usages:
+
+* `ddev start`
+* `ddev initialize`
+
+### Requirements
+
+1. Install ddev, see: https://ddev.readthedocs.io/en/stable/#installation
+2. Install git-lfs, see: https://git-lfs.github.com/
+
+### Installation
+
+1. Clone this repository
+2. Run `ddev start`
+3. Run `ddev initialize` to setup configurations and test database
+
+## Branchinfo
+
+* master Branch - Next Major Version
+
+## Early Access Programm for TYPO3 14 support
+
+:information_source: **TYPO3 14 compatibility**
+> See [EAP page (DE)](https://www.in2code.de/agentur/typo3-extensions/early-access-programm/) or
+> [EAP page (EN)](https://www.in2code.de/en/agency/typo3-extensions/early-access-program/) for more information how
+> to get access to a TYPO3 14 version
+
 ## Changelog
 
 | Version   | Date       | State   | Description                                                                                                                                                                                                                                   |
